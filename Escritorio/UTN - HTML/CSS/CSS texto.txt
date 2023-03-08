@@ -1,0 +1,151 @@
+CLASE 6
+
+.Text-transform: uppercase; "TODO EL TEXTO SE CONVIERTE EN MAYUSCULA"
+
+.Text-transform: lowercase; "TODO EL TEXTO SE CONVIERTE EN MINUSCULA"
+
+.Letter-spacing:  segun los pixeles de separacion que queramos; "ESPACIO ENTRE LETRAS"
+
+.Word-spacing: segun los pixeles de separacion que queramos; "ESPACIO ENTRE PALABRAS"
+
+.Line.heigth: "ESPACIO ENTRE LINEAS" Osea alto
+
+
+01:22:14 IMG DE FONDO "trabajo practico"
+
+En el "Body no se recomienda porq hace pesada la pagina"
+
+    body{
+       background-repeat: no-repeat;
+       background-position: center; O con top, right, bottom, left.
+}
+
+"Por secciones o div, se coloca una img de fondo"  en el HTML y en CSS le modificamos su Ancho y alto
+
+       background-img:
+
+Padding: Sepero "LINK 1" con la caja con radius border blanca
+
+Margin: Separo las 5 cajas 
+
+BOTONES : LINK 1,2,3,4,5
+
+
+---
+
+CLASE 2 "Diseño Web"
+
+FLEXBOX: TRABAJO PRÁCTICO
+
+  aling-item: center
+  aling-content: center
+  flex-wrap: wrap
+
+POSITION
+
+FIXED: "Se vió en Sticky"
+
+HTML
+    <a href="" class="icono-wsp"></a>
+    <img src="IMAGEN WSP" alt="ACA VA EL ICONO">
+
+CSS
+
+position: fixed
+
+
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Linktree</title>
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="logo">
+            <img src="./Trabajo Práctico/avatar-ej1.png" alt="">
+        </div>
+
+        <nav class="navegacion">
+            <ul class="lista-navegacion">
+                <li class="lista">Inicio</li>
+                <li class="lista">Contacto</li>
+                <li class="lista">Nosotros</li>
+            </ul>
+        </nav>
+        <a href="#" class="btn"><button>login</button></a>
+    </header>
+
+
+</body>
+
+</html>
+
+
+
+
+
+CSS:
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+.encabezado{
+    background-color: aqua;
+    height: 60px;
+    padding: 5px 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.encabezado .logo{
+    margin-left: auto;
+    order: 3;
+}
+
+.encabezado .logo img{
+    height: 55px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.encabezado .logo img:hover{
+    transform: scale(1.2);
+}
+
+.lista{
+    list-style: none;
+}
+
+.lista-navegacion li {
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.lista-navegacion li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn button{
+    border: none;
+    border-radius: 20px;
+    padding: 9px 15px;
+    font-size: 15px;
+}
+
+background: linear-gradient (red, blue); (DIFUMINADO DE COLOR)

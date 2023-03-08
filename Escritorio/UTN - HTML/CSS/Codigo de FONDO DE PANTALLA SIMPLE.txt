@@ -1,0 +1,10 @@
+CSS "FONDO DE PANTALLA A LA PERFECCIÓN"
+
+body{
+   background-image: url(./T.P/fondopalmera.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   
+}
